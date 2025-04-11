@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mahima Sharan – Resume</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="theme-toggle">
+    <button id="toggle-theme">☀️ / 🌙</button>
+    <button id="download-btn">⬇️ Download PDF</button>
+  </div>
+
+  <header>
+    <h1>Mahima Sharan</h1>
+    <p>Dual Degree Student – Economics & Digital Business | Content & Innovation</p>
+    <div class="shortcut-links">
+      <a href="#summary">📄 Summary</a>
+      <a href="#experience">💼 Experience</a>
+      <a href="#education">🎓 Education</a>
+      <a href="#skills">🛠 Skills</a>
+      <a href="#certifications">🏅 Certifications</a>
+      <a href="#contact">✉️ Contact</a>
+    </div>
+  </header>
+
+  <main id="resume-content">
+    <section id="summary">
+        <h2><i class="fas fa-user"></i> Summary</h2>
+        <div class="card">
+            <p>
+                Dynamic and driven dual-major student in Economics and Digital Business & Entrepreneurship (Amity University & IIM Bangalore) with a strong foundation in research, content strategy, and digital tools.
+              </p>
+              <p>
+                Head of Content at the Institution’s Innovation Council (IIC) and volunteer at UMEED NGO, bringing proven skills in editing, visual design, and impactful communication.
+              </p>
+              <p>
+                Certified by IIT Kharagpur and Infosys Springboard, I blend analytical thinking with creative execution to solve real-world challenges.
+              </p>
+              <p>
+                Passionate about building value through data, design, and purpose-driven content.
+              </p>
+        </div>
+      </section>
+      
+      
+
+    <section id="experience">
+      <h2><i class="fas fa-briefcase"></i> Experience</h2>
+      <div class="card">
+        <h3>IIC, Amity University – Head of Content</h3>
+        <p><strong>Sep 2024 – Present</strong><br>
+        Leading content strategy and innovation promotion under MoE initiatives.</p>
+      </div>
+      <div class="card">
+        <h3>UMEED NGO – Volunteer</h3>
+        <p><strong>Oct 2024 – Present</strong><br>
+        Assisting in content, events, and outreach for social programs.</p>
+      </div>
+    </section>
+
+    <section id="skills">
+        <h2><i class="fas fa-cogs"></i> Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>🧾 Excel</h3>
+            <p>Data organization, pivot tables, financial modeling, performance tracking.</p>
+          </div>
+          <div class="skill-card">
+            <h3>🎨 Canva</h3>
+            <p>Presentations, infographics, social media creatives, brand visuals.</p>
+          </div>
+          <div class="skill-card">
+            <h3>🎞 Video Editing</h3>
+            <p>Editing with InShot, CapCut, Adobe Premiere Rush for multiple formats.</p>
+          </div>
+          <div class="skill-card">
+            <h3>🔍 Research</h3>
+            <p>Qualitative & quantitative research for academic and market insights.</p>
+          </div>
+          <div class="skill-card">
+            <h3>📊 Data Analysis</h3>
+            <p>Identifying trends, analyzing datasets, using Excel & Google Sheets.</p>
+          </div>
+          <div class="skill-card">
+            <h3>✍️ Content Strategy</h3>
+            <p>Planning and executing content across newsletters, social, and campaigns.</p>
+          </div>
+        </div>
+      </section>
+      
+
+    <section id="certifications">
+      <h2><i class="fas fa-certificate"></i> Certifications</h2>
+      <div class="card">
+        <ul>
+          <li>Legal Compliance for Startups – IIT Kharagpur (NPTEL)</li>
+          <li>Infosys Springboard – Leadership & Tech Skills</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2><i class="fas fa-envelope"></i> Contact</h2>
+      <div class="card">
+        <p>Email: <a href="mailto:1301.mahimasharan@gmail.com">1301.mahimasharan@gmail.com</a></p>
+        <p>Phone: 9311339566</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/mahima-sharan-439315297/" target="_blank">linkedin.com/in/mahima-sharan</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Mahima Sharan</p>
+  </footer>
+
+  <script>
+    const toggleButton = document.getElementById('toggle-theme');
+    const downloadBtn = document.getElementById('download-btn');
+
+    toggleButton.onclick = () => {
+      document.body.classList.toggle('dark');
+    };
+
+    downloadBtn.onclick = () => {
+      const element = document.getElementById('resume-content');
+      html2pdf().from(element).save('Mahima_Sharan_Resume.pdf');
+    };
+  </script>
+</body>
+</html>
