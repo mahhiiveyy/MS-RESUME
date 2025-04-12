@@ -114,18 +114,19 @@ h2 {
 
 /* SKILLS */
 .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1rem;
-  margin-top: 1rem;
+background: var(--card);
+  padding: 1rem 1.5rem;
+  margin: 1rem 0;
+  border-radius: 18px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  position: relative;
+  z-index: 0;
 }
 
 .skill-card {
-  background: var(--card);
-  padding: 1rem;
-  border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  transition: all 0.3s ease;
+  box-shadow: 0 12px 28px rgba(181, 142, 220, 0.3); /* soft glow behind */
+  transform: translateY(-4px); /* subtle lift */
 }
 
 .skill-card h3 {
