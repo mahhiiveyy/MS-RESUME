@@ -146,8 +146,8 @@ h2 {
   background-color: var(--card);
 }
 
-/* LANGUAGES & RESEARCH SECTION */
-.combo-grid {
+/* ===== Languages ===== */
+.lang-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
@@ -155,7 +155,43 @@ h2 {
   justify-content: space-between;
 }
 
-.combo-card {
+.lang-card {
+  flex: 1 1 30%;
+  min-width: 240px;
+  background-color: var(--card);
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lang-card h3 {
+  margin-top: 0;
+  color: var(--accent);
+  font-size: 1.1rem;
+}
+
+.lang-card p {
+  font-size: 0.95rem;
+  margin: 0.3rem 0 0;
+}
+
+.lang-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 28px rgba(181, 142, 220, 0.25);
+}
+
+
+/* ===== Research ===== */
+.research-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+  justify-content: space-between;
+}
+
+.research-card {
   flex: 1 1 45%;
   min-width: 260px;
   background-color: var(--card);
@@ -165,19 +201,19 @@ h2 {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.combo-card h3 {
+.research-card h3 {
   margin: 0 0 0.4rem;
   font-size: 1.05rem;
   color: var(--accent);
 }
 
-.combo-card p {
-  margin: 0.3rem 0;
+.research-card p {
   font-size: 0.95rem;
+  margin: 0.4rem 0;
 }
 
-.combo-card:hover {
-  transform: translateY(-4px);
+.research-card:hover {
+  transform: translateY(-5px);
   box-shadow: 0 12px 28px rgba(181, 142, 220, 0.25);
 }
 
