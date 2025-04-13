@@ -1,251 +1,205 @@
-/* THEME COLORS */
-:root {
-  --bg: #fefaff;
-  --text: #2e2e3a;
-  --card: #ffffff;
-  --accent: #b58edc; /* Pastel lavender */
-  --link-hover: #a375d1;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mahima Sharan – Resume</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="theme-toggle">
+    <button id="toggle-theme">☀️ / 🌙</button>
+    <button id="download-btn">⬇️ Download PDF</button>
+  </div>
 
-body.dark {
-  --bg: #1e1e2f;
-  --text: #f1f1f1;
-  --card: #2a2a40;
-  --accent: #9a8cff;
-  --link-hover: #b3a9ff;
-}
+  <header>
+    <h1>Mahima Sharan</h1>
+    <p>Dual Degree Student – Economics & Digital Business | Content & Innovation</p>
+    <div class="shortcut-links">
+      <a href="#summary">📄 Summary</a>
+      <a href="#experience">💼 Experience</a>
+      <a href="#education">🎓 Education</a>
+      <a href="#skills">🛠 Skills</a>
+      <a href="#certifications">🏅 Certifications</a>
+      <a href="#contact">✉️ Contact</a>
+    </div>
+  </header>
 
-/* GLOBAL */
-body {
-  font-family: 'Inter', sans-serif;
-  margin: 0;
-  background-color: var(--bg);
-  color: var(--text);
-  line-height: 1.6;
-  transition: all 0.3s ease;
-  background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
-  background-repeat: repeat;
-  background-attachment: fixed;
-  padding-bottom: 4rem;
-}
+  <main id="resume-content">
+    <section id="summary">
+        <h2><i class="fas fa-user"></i> Summary</h2>
+        <div class="card">
+            <p>
+                Dynamic and driven dual-major student in Economics and Digital Business & Entrepreneurship (Amity University & IIM Bangalore) with a strong foundation in research, content strategy, and digital tools.
+              </p>
+              <p>
+                Head of Content at the Institution’s Innovation Council (IIC) and volunteer at UMEED NGO, bringing proven skills in editing, visual design, and impactful communication.
+              </p>
+              <p>
+                Certified by IIT Kharagpur and Infosys Springboard, I blend analytical thinking with creative execution to solve real-world challenges.
+              </p>
+              <p>
+                Passionate about building value through data, design, and purpose-driven content.
+              </p>
+        </div>
+      </section>
+      
+      
 
-a {
-  color: var(--accent);
-  text-decoration: none;
-}
-a:hover {
-  color: var(--link-hover);
-}
+      <section id="experience">
+        <h2><i class="fas fa-briefcase"></i> Experience</h2>
+      
+        <div class="card">
+          <h3>Institution’s Innovation Council (IIC), Amity University</h3>
+          <p><strong>Head of Content</strong> &nbsp;|&nbsp; Sep 2024 – Present</p>
+          <ul>
+            <li>Led content strategy for innovation-driven initiatives under the <strong>Ministry of Education (MoE)</strong>.</li>
+            <li>Conceptualized and managed campaigns promoting <strong>entrepreneurship</strong>, <strong>start-up culture</strong>, and student innovation.</li>
+            <li>Collaborated with faculty and student bodies to execute <strong>workshops, competitions</strong>, and content aligned with <strong>national innovation goals</strong>.</li>
+          </ul>
+        </div>
+      
+        <div class="card">
+          <h3>UMEED NGO</h3>
+          <p><strong>Content & Outreach Volunteer</strong> &nbsp;|&nbsp; Oct 2024 – Present</p>
+          <ul>
+            <li>Designed impactful content and coordinated <strong>social media outreach</strong> for community programs.</li>
+            <li>Contributed to <strong>event planning</strong> focused on education, awareness, and social upliftment.</li>
+            <li>Created visual narratives and digital materials to highlight <strong>real-life impact stories</strong> and promote NGO initiatives.</li>
+          </ul>
+        </div>
+      </section>
 
-/* HEADER */
-header {
-  text-align: center;
-  padding: 2.5rem 1rem;
-  background-color: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(12px);
-  border-radius: 20px;
-  margin: 2rem auto;
-  max-width: 800px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-}
+    <section id="skills">
+        <h2><i class="fas fa-cogs"></i> Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>🧾 Excel</h3>
+            <p>Data organization, pivot tables, financial modeling, performance tracking.</p>
+          </div>
+          <div class="skill-card">
+            <h3>🎨 Canva</h3>
+            <p>Presentations, infographics, social media creatives, brand visuals.</p>
+          </div>
+          <div class="skill-card">
+            <h3>🎞 Video Editing</h3>
+            <p>Editing with InShot, CapCut, Adobe Premiere Rush for multiple formats.</p>
+          </div>
+          <div class="skill-card">
+            <h3>🔍 Research</h3>
+            <p>Qualitative & quantitative research for academic and market insights.</p>
+          </div>
+          <div class="skill-card">
+            <h3>📊 Data Analysis</h3>
+            <p>Identifying trends, analyzing datasets, using Excel & Google Sheets.</p>
+          </div>
+          <div class="skill-card">
+            <h3>✍️ Content Strategy</h3>
+            <p>Planning and executing content across newsletters, social, and campaigns.</p>
+          </div>
+        </div>
+      </section>
+      <section id="languages">
+        <h2>Languages</h2>
+        <div class="research-grid">
+          <div class="research-card">
+            <h3>English</h3>
+            <p>Professional Proficiency</p>
+          </div>
+      
+          <div class="research-card">
+            <h3>Hindi</h3>
+            <p>Native Speaker</p>
+          </div>
+      
+          <div class="research-card">
+            <h3>German</h3>
+            <p>Basic Conversational Skills</p>
+          </div>
+        </div>
+      </section>
+      
 
-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.4rem;
-}
+    <section id="education">
+  <h2><i class="fas fa-graduation-cap"></i> Education</h2>
 
-header p {
-  color: var(--accent);
-  font-weight: 400;
-  font-size: 1.1rem;
-}
+  <div class="card">
+    <h3>🎓 Indian Institute of Management Bangalore</h3>
+    <p><strong>BBA, Digital Business and Entrepreneurship</strong></p>
+    <p>Sep 2024 – Jul 2027</p>
+  </div>
 
-/* SHORTCUT BUTTONS */
-.shortcut-links {
-  margin-top: 1rem;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 10px;
-}
+  <div class="card">
+    <h3>🎓 Amity University</h3>
+    <p><strong>BBE, Business Economics</strong></p>
+    <p>Jul 2023 – Jun 2026</p>
+  </div>
 
-.shortcut-links a {
-  background-color: var(--accent);
-  color: #fff;
-  padding: 0.5rem 1rem;
-  border-radius: 25px;
-  font-size: 0.9rem;
-  transition: background-color 0.3s ease;
-}
+  <div class="card">
+    <h3>🏫 Carmel Convent School – India</h3>
+    <p><strong>Business/Commerce (CBSE)</strong></p>
+    <p>Apr 2009 – Mar 2023</p>
+  </div>
+</section>
+<section id="research">
+  <h2>Research Projects</h2>
 
-.shortcut-links a:hover {
-  background-color: var(--link-hover);
-}
+  <div class="research-grid">
+    <div class="research-card">
+      <h3>📘 Leadership Effectiveness & Decision-Making in Organizations</h3>
+      <p><strong>Year:</strong> 2025 | <strong>Institution:</strong> Amity University</p>
+      <p>Analyzed how different leadership styles impact decision-making across organizational levels. Included primary data collection, survey design, and APA-formatted report writing.</p>
+    </div>
 
-/* MAIN CONTENT */
-main {
-  max-width: 800px;
-  margin: auto;
-  padding: 0 1.5rem;
-}
-
-/* SECTION HEADINGS */
-h2 {
-  font-size: 1.6rem;
-  margin-top: 2.5rem;
-  color: var(--accent);
-}
-
-/* CARDS */
-.card {
-  background: var(--card);
-  padding: 1rem 1.5rem;
-  margin: 1rem 0;
-  border-radius: 18px;
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
-  position: relative;
-  z-index: 0;
-}
-
-.card:hover {
-  box-shadow: 0 12px 28px rgba(181, 142, 220, 0.3);
-  transform: translateY(-4px);
-}
-
-/* SKILLS */
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-.skill-card {
-  background: var(--card);
-  padding: 1rem;
-  border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  transition: all 0.3s ease;
-}
-
-.skill-card h3 {
-  margin: 0 0 0.5rem;
-  font-size: 1.1rem;
-  color: var(--accent);
-}
-
-.skill-card p {
-  font-size: 0.95rem;
-  margin: 0;
-}
-
-.skill-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 28px rgba(181, 142, 220, 0.25);
-  background-color: var(--card);
-}
-
-/* ===== Languages ===== */
-.lang-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 1rem;
-  justify-content: space-between;
-}
-
-.lang-card {
-  flex: 1 1 30%;
-  min-width: 240px;
-  background-color: var(--card);
-  border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  padding: 1rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.lang-card h3 {
-  margin-top: 0;
-  color: var(--accent);
-  font-size: 1.1rem;
-}
-
-.lang-card p {
-  font-size: 0.95rem;
-  margin: 0.3rem 0 0;
-}
-
-.lang-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 28px rgba(181, 142, 220, 0.25);
-}
+    <div class="research-card">
+      <h3>📊 Defence Expenditure & Economic Growth in India</h3>
+      <p><strong>Year:</strong> 2024 | <strong>Type:</strong> Research Paper</p>
+      <p>Did a research and wrote a research paper on the impact of sector-wise defense spending on India’s economic growth using comparative financial and policy analysis across military divisions.</p>
+    </div>
+  </div>
+</section>
 
 
-/* ===== Research ===== */
-.research-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 1rem;
-  justify-content: space-between;
-}
 
-.research-card {
-  flex: 1 1 45%;
-  min-width: 260px;
-  background-color: var(--card);
-  border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  padding: 1rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+    <section id="certifications">
+      <h2><i class="fas fa-certificate"></i> Certifications</h2>
+      <div class="card">
+        <ul>
+          <li>Legal Compliance for Startups – IIT Kharagpur (NPTEL)</li>
+          <li>Infosys Springboard – Leadership & Tech Skills</li>
+        </ul>
+      </div>
+    </section>
 
-.research-card h3 {
-  margin: 0 0 0.4rem;
-  font-size: 1.05rem;
-  color: var(--accent);
-}
+    <section id="contact">
+      <h2><i class="fas fa-envelope"></i> Contact</h2>
+      <div class="card">
+        <p>Email: <a href="mailto:1301.mahimasharan@gmail.com">1301.mahimasharan@gmail.com</a></p>
+        <p>Phone: 9311339566</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/mahima-sharan-439315297/" target="_blank">linkedin.com/in/mahima-sharan</a></p>
+      </div>
+    </section>
+  </main>
 
-.research-card p {
-  font-size: 0.95rem;
-  margin: 0.4rem 0;
-}
+  <footer>
+    <p>&copy; 2025 Mahima Sharan</p>
+  </footer>
 
-.research-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 28px rgba(181, 142, 220, 0.25);
-}
+  <script>
+    const toggleButton = document.getElementById('toggle-theme');
+    const downloadBtn = document.getElementById('download-btn');
 
-/* THEME TOGGLE + PDF DOWNLOAD */
-.theme-toggle {
-  position: fixed;
-  top: 1rem;
-  right: 1rem;
-  display: flex;
-  gap: 10px;
-  z-index: 1000;
-}
+    toggleButton.onclick = () => {
+      document.body.classList.toggle('dark');
+    };
 
-.theme-toggle button {
-  background: var(--accent);
-  color: white;
-  border: none;
-  padding: 0.5rem 0.8rem;
-  border-radius: 6px;
-  font-size: 0.9rem;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.theme-toggle button:hover {
-  background-color: var(--link-hover);
-}
-
-/* FOOTER */
-footer {
-  text-align: center;
-  font-size: 0.9rem;
-  color: var(--text);
-  padding: 1.5rem 0;
-}
+    downloadBtn.onclick = () => {
+      const element = document.getElementById('resume-content');
+      html2pdf().from(element).save('Mahima_Sharan_Resume.pdf');
+    };
+  </script>
+</body>
+</html>
